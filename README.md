@@ -57,8 +57,3 @@ An interactive calculator that performs basic arithmetic operations. Built with 
 - CSS3
 - JavaScript
 
----
-
-## How to Use
-
-1. Clone this repository:
