@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohit Bansal | Portfolio</title>
+
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Mohit Bansal</h1>
+    <p>Aspiring Software Engineer | MERN Stack Developer | Generative AI Enthusiast</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="images/profile.png" alt="Mohit Bansal Profile Picture">
+      <div class="bio">
+        <p>Hello! I'm Mohit Bansal, currently pursuing BTech. I specialize in Data Structures & Algorithms using C++, web development using the MERN stack, and I'm diving deep into Generative AI and Machine Learning. I love building real-world projects and learning new technologies every day.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>C++ (DSA)</li>
+      <li>Python</li>
+      <li>C</li>
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>MERN Stack</li>
+      <li>Generative AI</li>
+      <li>Machine Learning (Andrew Ng Specialization)</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Generative AI Chatbot</h3>
+      <p>End-to-end medical chatbot built using OpenAI, LangChain, and Hugging Face APIs with memory and vector DB integration.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Full-Stack Web App</h3>
+      <p>A complete MERN application with user authentication, CRUD operations, and responsive design.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>ML Projects</h3>
+      <p>Created supervised and unsupervised ML models while completing the Andrew Ng Specialization.</p>
+    </div>
+
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <p><a href="resume.pdf" download class="resume-link">Download My Resume (PDF)</a></p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: mohitbansal@example.com</p>
+    <p>Phone: +91-9876543210</p>
+    <p>
+      <a href="https://github.com/" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mohit Bansal | All Rights Reserved</p>
+  </footer>
+
+  <!-- Animation Script -->
+  <script>
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+      section.classList.add('hidden');
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
